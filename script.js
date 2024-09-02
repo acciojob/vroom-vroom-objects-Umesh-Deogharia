@@ -10,13 +10,13 @@ function Car(make, model) {
 
 function SportsCar(make, model, topSpeed) {
 	Car.call(this,make,model)
-	this.topspeed = topSpeed;
+	this.topSpeed = topSpeed;
 }
 	SportsCar.prototype = Object.create(Car.prototype);
 	SportsCar.prototype.constructor = SportsCar;
 
 SportsCar.prototype.getTopSpeed = function(){ 
-	return this.topspeed;
+	return this.topSpeed;
 }		
 
 	
